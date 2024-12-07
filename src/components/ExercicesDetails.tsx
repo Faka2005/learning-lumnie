@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import api from '../services/api'; // Assurez-vous que votre fichier api.ts est bien configuré
+import api from '../services/api'; 
 
 interface Exercice {
   id: number;
@@ -47,5 +47,7 @@ const ExercicesDetails: React.FC = () => {
     </div>
   );
 };
+
+
 
 export default ExercicesDetails;

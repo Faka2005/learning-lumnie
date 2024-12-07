@@ -12,6 +12,7 @@ const CardItem: Card[] = [
   { title: 'Home', links: '/', active: true },
   { title: 'Exercice', links: '/exercice', active: true },
   { title: 'Cours', links: '/course', active: true },
+  { title:'Outils', links:'/outils',active:true}
 ];
 
 const NavbarCard = () => {
