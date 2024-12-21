@@ -1,0 +1,78 @@
+/* Container pour les cartes */
+.card-container {
+  display: flex; /* Affiche les cartes en flex */
+  flex-wrap: wrap; /* Permet le retour à la ligne si nécessaire */
+  justify-content: space-between; /* Ajoute un espace uniforme entre les cartes */
+  gap: 20px; /* Espacement entre les cartes */
+  margin: 20px 0; /* Espacement autour du conteneur */
+}
+
+/* Carte elle-même */
+.card {
+  flex: 1 1 calc(25% - 20px); /* Chaque carte occupe 25% de la largeur moins l'espacement */
+  max-width: calc(25% - 20px); /* Limite la largeur de chaque carte à 25% */
+  height: 150px; /* Hauteur fixe pour toutes les cartes */
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column; /* Organise le contenu à l'intérieur verticalement */
+  justify-content: center; /* Centre verticalement le contenu */
+  align-items: center; /* Centre horizontalement le contenu */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 10px; /* Ajoute un padding interne */
+}
+
+/* Effet au survol */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Titre dans la carte */
+.card-title {
+  font-size: 1.5rem;
+  margin: 0;
+  color: #333;
+}
+
+.card-title a {
+  text-decoration: none;
+  color: #007bff;
+  transition: color 0.3s ease;
+}
+
+.card-title a:hover {
+  color: #0056b3;
+}
+
+/* Conteneur pour le thème */
+.card-theme {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .card {
+    flex: 1 1 calc(33.33% - 20px); /* 3 cartes par ligne */
+    max-width: calc(33.33% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex: 1 1 calc(50% - 20px); /* 2 cartes par ligne */
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    flex: 1 1 100%; /* 1 carte par ligne */
+    max-width: 100%;
+  }
+}

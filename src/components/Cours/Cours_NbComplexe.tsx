@@ -1,6 +1,6 @@
 import React from "react";
 
-function Cours_NbComplexe(){
+function CoursNbComplexe(){
     return(
         <div>
             <strong><h1>Cours sur les nombres complexes</h1></strong>
@@ -8,4 +8,4 @@ function Cours_NbComplexe(){
     )
 }
 
-export default Cours_NbComplexe;
+export default CoursNbComplexe;

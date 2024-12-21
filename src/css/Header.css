@@ -1,63 +1,105 @@
-/* Styles globaux pour la navbar */
+/* Styles globaux pour le header */
 .header {
-    background-color: #004d99;
-    color: white;
-    padding: 10px 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
+  background-color: #004d99;
+  color: white;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Navigation */
+.nav {
+  margin: 0;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin-left: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ffcc00; /* Couleur d'accentuation au survol */
+}
+
+/* Barre de recherche */
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 4px 0 0 4px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.search-button {
+  padding: 5px 10px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+/* Styles pour écrans mobiles */
+@media (max-width: 768px) {
   .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
   }
-  
-  .logo {
-    font-size: 2rem;
-    font-weight: bold;
-    margin: 0;
-  }
-  
-  .nav {
-    margin: 0;
-  }
-  
+
   .nav-list {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
+    flex-direction: column;
+    width: 100%;
   }
-  
+
   .nav-item {
-    margin-left: 20px;
+    margin: 10px 0;
   }
-  
-  .nav-link {
-    text-decoration: none;
-    color: white;
-    font-size: 1.2rem;
-    transition: color 0.3s ease;
+
+  .search-bar {
+    width: 100%;
+    margin-top: 10px;
   }
-  
-  .nav-link:hover {
-    color: #ffcc00; /* Couleur d'accentuation au survol */
+
+  .search-input {
+    flex-grow: 1;
+    width: 100%;
   }
-  
-  /* Styles pour écrans mobiles */
-  @media (max-width: 768px) {
-    .container {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .nav-list {
-      flex-direction: column;
-      width: 100%;
-    }
-  
-    .nav-item {
-      margin: 10px 0;
-    }
-  }
-  
+}

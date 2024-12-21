@@ -85,7 +85,7 @@ function RoutesList() {
 
   return (
     <div>
-      <h1>Liste des Routes et leurs Résultats</h1>
+      <h1>Liste des data et leurs Résultats</h1>
       <div>
         <h2>Route: /</h2>
         <p>{data.root}</p>
