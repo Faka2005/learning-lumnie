@@ -11,6 +11,7 @@ import CourseDetail from './components/CourseDetails';
 import CourseList from './components/CourseList';
 import Card from './components/Admin/TestPage';
 import HomeBack from './pages/HomeBack';
+import RecitateurDetails from './components/Principales/RecitateurDetails';
 
 
 
@@ -28,6 +29,8 @@ function App() {
           <Route path="/cours/:id" element={<CourseDetail />} />
           <Route path="/admin" element={<AdminPage />} />
           <Route path='/fiche' element={<FichePage />} />
+          <Route path='/exercice' element={<RecitateurList/>}/>
+          <Route path='/exercice/:id' element={<RecitateurDetails/>}/>
           <Route
         path="/admin/test"
         element={<Card title="Exemple" url="/home" />}
