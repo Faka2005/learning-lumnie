@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { courses,Course } from '../services/data';
-import AOP from './Cours/Physique/AOP';
-import CoursNbComplexe from './Cours/Cours_NbComplexe'; // Exemple de composant pour un exercice spécifique
+import AOP from '../Cours/Physique/AOP';
+import CoursNbComplexe from '../Cours/Cours_NbComplexe'; // Exemple de composant pour un exercice spécifique
 import Filtre from './Cours/Filtre';
 
 

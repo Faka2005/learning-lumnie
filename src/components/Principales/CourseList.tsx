@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
-import { courses } from "../services/data";
-import Card from "./Admin/TestPage";
+import { courses } from "../../services/data";
+import Card from "../Admin/TestPage";
 
 const CourseList: React.FC = () => {
   const [themeFilter, setThemeFilter] = useState<string>("");

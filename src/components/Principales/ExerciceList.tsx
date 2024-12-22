@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { exercices } from '../services/data';
+import { exercices } from '../../services/data';
 
 const ExerciceList: React.FC = () => {
   const [themeFilter, setThemeFilter] = useState<string>('');

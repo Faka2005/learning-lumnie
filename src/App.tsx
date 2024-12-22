@@ -10,6 +10,7 @@ import FichePage from './components/Fiche';
 import CourseDetail from './components/CourseDetails';
 import CourseList from './components/CourseList';
 import Card from './components/Admin/TestPage';
+import HomeBack from './pages/HomeBack';
 
 
 
@@ -33,6 +34,7 @@ function App() {
       />
         </Routes>
       </div>
+      <HomeBack/>
       <Footer />
     </Router>
   );
